@@ -13,7 +13,7 @@ class _BelajarRetrofitService implements BelajarRetrofitService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://jsonplaceholder.typicode.com';
+    baseUrl ??= 'https://dummyjson.com';
   }
 
   final Dio _dio;
@@ -21,20 +21,20 @@ class _BelajarRetrofitService implements BelajarRetrofitService {
   String? baseUrl;
 
   @override
-  Future<HttpResponse<List<PostModel>>> getData() async {
+  Future<HttpResponse<List<RecipeModel>>> getData() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<List<dynamic>>(
-        _setStreamType<HttpResponse<List<PostModel>>>(Options(
+        _setStreamType<HttpResponse<List<RecipeModel>>>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
     )
             .compose(
               _dio.options,
-              '/posts',
+              '/recipes',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -44,7 +44,7 @@ class _BelajarRetrofitService implements BelajarRetrofitService {
               baseUrl,
             ))));
     var value = _result.data!
-        .map((dynamic i) => PostModel.fromJson(i as Map<String, dynamic>))
+        .map((dynamic i) => RecipeModel.fromJson(i as Map<String, dynamic>))
         .toList();
     final httpResponse = HttpResponse(value, _result);
     return httpResponse;
