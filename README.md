@@ -1,4 +1,4 @@
-# Modul Pembelajaran: Aplikasi Resep dengan Arsitektur Bersih
+# Modul Pembelajaran: Aplikasi Resep dengan Arsitektur Bersih Menggunakan Flutter bloc
 
 Pendahuluan
 
