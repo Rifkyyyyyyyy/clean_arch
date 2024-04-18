@@ -31,7 +31,7 @@ Modul ini akan membahas konsep arsitektur bersih, implementasi pola tersebut dal
 
 ## ** Struktur Aplikasi **
 
-## Lapisan-lapisan dalam arsitektur bersih meliputi:
+### Lapisan-lapisan dalam arsitektur bersih meliputi:
 
 - Domain Layer: Merupakan inti dari aplikasi yang berisi aturan bisnis, entitas, dan logika aplikasi yang tidak bergantung pada detail implementasi teknis. Lapisan ini harus bersih dari 
   ketergantungan luar.
