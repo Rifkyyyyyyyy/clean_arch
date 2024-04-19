@@ -1,4 +1,4 @@
-# Modul Pembelajaran: Studi kasus aplikasi E-commerce dengan mengunakan pola arsitektur Bersih Menggunakan Flutter bloc
+# Modul Pembelajaran: Studi kasus aplikasi E-commerce sederhana dengan mengunakan pola arsitektur Bersih Menggunakan Flutter bloc
 
 Pendahuluan
 
