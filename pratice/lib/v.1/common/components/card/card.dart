@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'package:pratice/v.1/common/style/color/theme_color.dart';
+
+
+// membuat class reusable widget
+// Dalam arsitektur MVVM (Model-View-ViewModel), konsep reusable mengacu pada kemampuan untuk membuat komponen-komponen 
+// UI atau logika bisnis yang dapat digunakan kembali di berbagai bagian dari aplikasi. Ini sangat penting untuk mengurangi
+// duplikasi kode, meningkatkan konsistensi, dan mempermudah pemeliharaan aplikasi dalam jangka panjang.
 
 class ProductCard extends StatelessWidget {
   final String title;

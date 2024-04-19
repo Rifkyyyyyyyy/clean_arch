@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:pratice/v.1/common/style/color/theme_color.dart';
 
+// membuat widget bottom app bar yang dapat menavighate ke beberapa screen
+
 class BottomAppBarNav extends StatelessWidget {
   final StatefulNavigationShell statefulNavigationShell;
   const BottomAppBarNav({Key? key, required this.statefulNavigationShell})
