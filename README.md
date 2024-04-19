@@ -1,6 +1,6 @@
 # Modul Pembelajaran: Studi kasus aplikasi E-commerce sederhana dengan mengunakan pola arsitektur Bersih Menggunakan Flutter bloc
 
-Pendahuluan
+## Pendahuluan
 
 Modul ini bertujuan untuk memberikan pemahaman tentang pengembangan aplikasi Flutter menggunakan pola arsitektur bersih (Clean Architecture) dengan bahasa pemrograman dart. 
 Modul ini akan membahas konsep arsitektur bersih, implementasi pola tersebut dalam pengembangan aplikasi e-commerce, serta penggunaan beberapa paket Flutter populer seperti Retrofit, Get_it, dan Dio.
