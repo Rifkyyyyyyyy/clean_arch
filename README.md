@@ -1,9 +1,9 @@
-# Modul Pembelajaran: Aplikasi Resep dengan Arsitektur Bersih Menggunakan Flutter bloc
+# Modul Pembelajaran: Studi kasus aplikasi E-commerce dengan mengunakan pola arsitektur Bersih Menggunakan Flutter bloc
 
 Pendahuluan
 
 Modul ini bertujuan untuk memberikan pemahaman tentang pengembangan aplikasi Flutter menggunakan pola arsitektur bersih (Clean Architecture) dengan bahasa pemrograman dart. 
-Modul ini akan membahas konsep arsitektur bersih, implementasi pola tersebut dalam pengembangan aplikasi resep, serta penggunaan beberapa paket Flutter populer seperti Retrofit, Get_it, dan Dio.
+Modul ini akan membahas konsep arsitektur bersih, implementasi pola tersebut dalam pengembangan aplikasi e-commerce, serta penggunaan beberapa paket Flutter populer seperti Retrofit, Get_it, dan Dio.
 
 ## Pengenalan Arsitektur Bersih 
 ![0_wOvdAp6-3CXkYSXQ](https://github.com/Rifkyyyyyyyy/package_hell/assets/129695871/58178601-f4a3-4c21-8a1e-e5b33067faea)
