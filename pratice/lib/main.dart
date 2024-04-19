@@ -4,6 +4,7 @@ import 'package:pratice/ls_container.dart';
 import 'package:pratice/observer.dart';
 import 'package:pratice/v.1/common/theme/theme_app.dart';
 import 'package:pratice/v.1/presentation/bloc/export.dart';
+import 'package:pratice/v.1/presentation/router/router.dart';
 
 import 'v.1/presentation/view/view.dart';
 
@@ -25,11 +26,11 @@ class _MyEntryPointState extends State<MyEntryPoint> {
   Widget build(BuildContext context) {
     return BlocProvider<ProductBloc>(
       create: (context) => ls()..add(ProductsStartedEvent()),
-      child: MaterialApp(
-        theme: themeData(),
+      child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
-        home: const ViewApp(),
-      ),
+        theme: themeData(),
+        routerConfig: goRouter(),
+      )
     );
   }
 }

@@ -6,7 +6,7 @@ import 'package:dio/dio.dart';
 
 import 'package:retrofit/retrofit.dart';
 
-import '../../constant/constant.dart';
+import '../../constant/base_url/constant.dart';
 import '../model/product_model.dart';
 
 // anda membutuhkan anotasi part untuk membuat file hasil generate yang akan kita build nanti.

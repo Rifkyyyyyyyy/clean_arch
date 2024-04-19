@@ -5,6 +5,7 @@ import 'package:pratice/v.1/common/style/fonts/theme_fonts.dart';
 
 ThemeData themeData() {
   return ThemeData(
+
       brightness: Brightness.light,
       cardColor: Colors.white,
       colorScheme: const ColorScheme.light(),
@@ -24,4 +25,5 @@ ThemeData themeData() {
         iconTheme: IconThemeData(color: Colors.black),
       ),
       textTheme: textThemeApp());
+      
 }

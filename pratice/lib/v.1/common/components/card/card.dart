@@ -21,7 +21,7 @@ class ProductCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
-      child: InkWell(
+      child: GestureDetector(
         onTap: () => goTo,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
