@@ -23,8 +23,8 @@ class MyEntryPoint extends StatefulWidget {
 class _MyEntryPointState extends State<MyEntryPoint> {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<RecipesBloc>(
-      create: (context) => ls()..add(RecipesStartedEvent()),
+    return BlocProvider<ProductBloc>(
+      create: (context) => ls()..add(ProductsStartedEvent()),
       child: MaterialApp(
         theme: themeData(),
         debugShowCheckedModeBanner: false,

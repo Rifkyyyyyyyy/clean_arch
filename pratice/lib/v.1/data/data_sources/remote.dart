@@ -7,7 +7,7 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
 import '../../constant/constant.dart';
-import '../model/post_model.dart';
+import '../model/product_model.dart';
 
 // anda membutuhkan anotasi part untuk membuat file hasil generate yang akan kita build nanti.
 part 'remote.g.dart';
@@ -21,9 +21,8 @@ abstract class BelajarRetrofitService {
 
   // jangan lupa untuk menambahkan path yang akan kita eksekusi , dan sesuaikan dengan methodenya.
   // pada kasus saya , saya hanya menggunakan get
-  @GET('/recipes')
-  Future<HttpResponse<List<RecipeModel>>>
-      getData(); // karna disini kita tidak membutuhkan query , jadi kita tidak perlu menambahkannya , jika perlu maka anotasinya akan seperi berikut :
+  @GET('/products')
+  Future<HttpResponse<List<ProductModel>>> getData(); // karna disini kita tidak membutuhkan query , jadi kita tidak perlu menambahkannya , jika perlu maka anotasinya akan seperi berikut :
 
         // @GET('/posts/id/name')
   // Future<HttpResponse<List<PostModel>>> getData({

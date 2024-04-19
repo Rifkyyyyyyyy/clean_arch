@@ -6,12 +6,14 @@ import 'package:pratice/v.1/common/style/fonts/theme_fonts.dart';
 ThemeData themeData() {
   return ThemeData(
       brightness: Brightness.light,
+      cardColor: Colors.white,
+      colorScheme: const ColorScheme.light(),
       primaryColor: Colors.white,
       scaffoldBackgroundColor: ColorsApp.body,
       appBarTheme: const AppBarTheme(
         elevation: 0,
         centerTitle: true,
-        systemOverlayStyle:  SystemUiOverlayStyle(
+        systemOverlayStyle: SystemUiOverlayStyle(
             statusBarColor: ColorsApp.body,
             statusBarBrightness: Brightness.dark,
             // systemNavigationBarColor: ColorsApp.body,

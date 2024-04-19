@@ -10,10 +10,8 @@ part of 'remote.dart';
 
 class _BelajarRetrofitService implements BelajarRetrofitService {
   _BelajarRetrofitService(
-    this._dio, {
-    this.baseUrl,
-  }) {
-    baseUrl ??= 'https://dummyjson.com';
+    this._dio) {
+    baseUrl ??= 'https://fakestoreapi.com';
   }
 
   final Dio _dio;
@@ -21,20 +19,20 @@ class _BelajarRetrofitService implements BelajarRetrofitService {
   String? baseUrl;
 
   @override
-  Future<HttpResponse<List<RecipeModel>>> getData() async {
+  Future<HttpResponse<List<ProductModel>>> getData() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<List<dynamic>>(
-        _setStreamType<HttpResponse<List<RecipeModel>>>(Options(
+        _setStreamType<HttpResponse<List<ProductModel>>>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
     )
             .compose(
               _dio.options,
-              '/recipes',
+              '/products',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -44,7 +42,7 @@ class _BelajarRetrofitService implements BelajarRetrofitService {
               baseUrl,
             ))));
     var value = _result.data!
-        .map((dynamic i) => RecipeModel.fromJson(i as Map<String, dynamic>))
+        .map((dynamic i) => ProductModel.fromJson(i as Map<String, dynamic>))
         .toList();
     final httpResponse = HttpResponse(value, _result);
     return httpResponse;

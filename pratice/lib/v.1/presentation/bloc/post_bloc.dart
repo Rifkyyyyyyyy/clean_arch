@@ -4,21 +4,22 @@ import 'package:pratice/v.1/domain/usecase/usecase_impl.dart';
 
 import 'export.dart';
 
-class RecipesBloc extends Bloc<RecipesEvent, RecipesState> {
+class ProductBloc extends Bloc<ProductsEvent, ProductState> {
   final UseCaseImpl _useCaseImpl;
 
-  RecipesBloc(this._useCaseImpl) : super(RecipesInitial()) {
-    on<RecipesStartedEvent>(_getData);
+  ProductBloc(this._useCaseImpl) : super(ProductInitial()) {
+    on<ProductsStartedEvent>(_getData);
   }
 
   void _getData(
-      RecipesStartedEvent event, Emitter<RecipesState> emitter) async {
+      ProductsStartedEvent event, Emitter<ProductState> emitter) async {
+    emitter(ProductLoading());
     final data = await _useCaseImpl();
+
     if (data is DataSuccess && data.value!.isNotEmpty) {
-      emitter(RecipesLoaded(data.value!));
-    }
-    else if (data is DataFailed) {
-      emitter(RecipesError(data.exception!));
+      emitter(ProductLoaded(data.value!));
+    } else if (data is DataFailed) {
+      emitter(ProductError(data.exception!));
     }
   }
 }
