@@ -37,4 +37,10 @@ Lapisan-lapisan dalam arsitektur bersih meliputi:
 - Data Layer: Bertanggung jawab untuk mengelola data aplikasi, termasuk akses ke database, API, atau sumber data eksternal lainnya. Lapisan ini berkomunikasi dengan domain layer.
 - Presentasi Layer: Menangani tampilan pengguna dan interaksi pengguna. Lapisan ini berkomunikasi dengan domain layer dan menggunakan data dari data layer untuk ditampilkan kepada 
   pengguna.
-  
+
+Package yang digunakan
+
+- Flutter_bloc : https://pub.dev/packages/flutter_bloc
+- Get_it : https://pub.dev/packages/get_it
+- Retrofit : https://pub.dev/packages/retrofit
+- Go_router : https://pub.dev/packages/go_router
