@@ -1,5 +1,8 @@
 # Modul Pembelajaran: Studi kasus aplikasi E-commerce sederhana dengan mengunakan pola arsitektur Bersih Menggunakan Flutter bloc
 
+
+![FD](https://github.com/Rifkyyyyyyyy/clean_arch/assets/129695871/51836b46-9d95-43d4-9fbf-23b7597a570b)
+
 ## Pendahuluan
 
 Modul ini bertujuan untuk memberikan pemahaman tentang pengembangan aplikasi Flutter menggunakan pola arsitektur bersih (Clean Architecture) dengan bahasa pemrograman dart. 
@@ -37,4 +40,10 @@ Lapisan-lapisan dalam arsitektur bersih meliputi:
 - Data Layer: Bertanggung jawab untuk mengelola data aplikasi, termasuk akses ke database, API, atau sumber data eksternal lainnya. Lapisan ini berkomunikasi dengan domain layer.
 - Presentasi Layer: Menangani tampilan pengguna dan interaksi pengguna. Lapisan ini berkomunikasi dengan domain layer dan menggunakan data dari data layer untuk ditampilkan kepada 
   pengguna.
-  
+
+Package yang digunakan
+
+- Flutter_bloc : https://pub.dev/packages/flutter_bloc
+- Get_it : https://pub.dev/packages/get_it
+- Retrofit : https://pub.dev/packages/retrofit
+- Go_router : https://pub.dev/packages/go_router
