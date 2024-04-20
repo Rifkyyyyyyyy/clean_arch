@@ -40,7 +40,7 @@ class ProductCard extends StatelessWidget {
                 image,
                 width: double.infinity,
                 fit: BoxFit.contain,
-                height: 180,
+                height: 160,
               ),
             ),
             Expanded(
@@ -48,41 +48,45 @@ class ProductCard extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(title,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: Theme.of(context).textTheme.titleSmall),
-                    const SizedBox(height: 10),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text('\$${price.toString()}',
+                    // const SizedBox(height: 10),
+                    Expanded(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('\$${price.toString()}',
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: Theme.of(context).textTheme.titleMedium),
+                          const SizedBox(width: 5),
+                          Text(
+                            '\$199',
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
-                            style: Theme.of(context).textTheme.titleMedium),
-                        const SizedBox(width: 5),
-                        Text(
-                          '\$199',
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey[600],
-                            decoration: TextDecoration.lineThrough,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey[600],
+                              decoration: TextDecoration.lineThrough,
+                            ),
                           ),
-                        ),
-                        const Spacer(),
-                        IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.shopping_bag,
-                            color: ColorsApp.mainText,
+                          const Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.shopping_bag,
+                              color: ColorsApp.mainText,
+                            ),
+                    
+                            // color: ColorsApp.mainText,
                           ),
-
-                          // color: ColorsApp.mainText,
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),

@@ -27,7 +27,7 @@ TextTheme textThemeApp() {
     ),
     titleLarge: TextStyle(
       fontSize: 20,
-      fontWeight: FontWeight.w600,
+      fontWeight: FontWeight.w800,
       color: ColorsApp.mainText,
       fontFamily: 'Helvetica',
       height: 1.5
@@ -41,7 +41,7 @@ TextTheme textThemeApp() {
     ),
     titleSmall: TextStyle(
       fontSize: 12,
-      fontWeight: FontWeight.w600,
+      fontWeight: FontWeight.w300,
       color: ColorsApp.mainText,
       fontFamily: 'Helvetica',
       height: 1.5
